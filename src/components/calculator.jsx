@@ -13,14 +13,7 @@ function Calculator() {
     } else {
       setResult(result + input)
     }
-    console.log(input);
-    //let type = e.target.type;
-    // console.log(type);
-    // if(type === "number") {
-    //   console.log("Isso é um numero.")
-    // } else {
-    //   console.log("NÃO É NUMERO.")
-    // }
+    console.log(input)
   }
 
   return(
@@ -30,7 +23,7 @@ function Calculator() {
       <Result>{result}</Result>
       {buttons.map((i) => {
         return(
-          <Button onClick={handleClick} type={i.type} value={i.value}>{i.symbol}</Button>
+            <Button onClick={handleClick} type={i.type} value={i.value}>{i.symbol}</Button>
         )
       })}
       </ContainerCalculator>
